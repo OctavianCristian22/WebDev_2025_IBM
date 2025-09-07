@@ -1,6 +1,6 @@
-import { configureStore } from '@reduxjs/toolkit';
-import playerReducer from '../reducers/index';
+import { createStore } from 'redux';
+import rootReducer from '../reducers/rootReducer';
 
-const store = configureStore({ reducer: playerReducer });
+const store = createStore(rootReducer);
 
 export default store;
